@@ -9,13 +9,13 @@ public class TestBankAccount {
 	public void testDebitWithSufficientFunds() {
 		BankAccount account = new BankAccount(10);
 		double amount = account.debit(5); 
-		Assert.assertequals(5.0, amount);
+		Assert.assertEquals(5.0, amount);
 	}
 	
 	@Test
 	public void testDebitWithInSufficientFunds() {
 		BankAccount account = new BankAccount(10);
 		double amount = account.debit(11); 
-		Assert.assertequals(10.0, amount);
+		Assert.assertEquals(10.0, amount);
 	}	
 }
